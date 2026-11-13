@@ -1,23 +1,35 @@
-memory/
+# Dependencies & environment
+node_modules/
+var/
 .venv/
 .env
 .env.*
 !.env.example
-data/raw/
-data/processed/
-data/private/
-__pycache__/
-.pytest_cache/
-.pytest_tmp/
+.anonymity-denylist.local
+*.log
+
+# Databases & local state
 *.sqlite
 *.sqlite3
 *.db
 *.sqlite-*
 *.sqlite3-*
 *.db-*
+memory/
+data/raw/
+data/processed/
+data/private/
+
+# Python & tests
+__pycache__/
+.pytest_cache/
+.pytest_tmp/
+
+# Secrets
 secrets.json
 credentials.json
 *.pem
 *.key
-course-agent\data\1131-1142 開課資料.xlsx
+
+# Editor
 .vscode
